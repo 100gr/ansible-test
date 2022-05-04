@@ -1,6 +1,4 @@
 - hosts:
     - all
-  debug:
-    msg: "'{{ lookup('env', 'HOME') }}' is the HOME environment variable."
   tasks:
     - action: ping
