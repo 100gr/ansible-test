@@ -1,7 +1,5 @@
 - hosts:
     - all
-    - -o StrictHostKeyChecking=no
-    - -o UserKnownHostsFile=/dev/null
   environment:
     ansible_host_key_checking: false
     ansible_ssh_host_key_checking: false
