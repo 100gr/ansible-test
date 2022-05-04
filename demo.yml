@@ -3,5 +3,8 @@
   environment:
     ansible_host_key_checking: false
     ansible_ssh_host_key_checking: false
+    ssh_connection_options:
+      - -o StrictHostKeyChecking=no
+      - -o UserKnownHostsFile=/dev/null
   tasks:
     - action: ping
